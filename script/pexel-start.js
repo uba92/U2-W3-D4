@@ -29,6 +29,7 @@ loadBtn.addEventListener('click', function () {
       const arrImg = Array.from(images)
       for (let i = 0; i < arrImg.length; i++) {
         arrImg[i].setAttribute('src', `${data.photos[i].src.medium}`)
+        // arrImg[i].classList.add('h-50')
       }
       let textMuted = document.querySelectorAll('small.text-muted')
       const arrMuted = Array.from(textMuted)
@@ -41,6 +42,7 @@ loadBtn.addEventListener('click', function () {
       const arrOfCards = Array.from(cards)
       for (let i = 0; i < arrOfCards.length; i++) {
         arrOfCards[i].classList.remove('d-none')
+        // arrOfCards[i].classList.add('h-75')
       }
     })
     .catch((error) => {
@@ -78,6 +80,11 @@ loadBtnSecond.addEventListener('click', function () {
       console.log(arrMuted)
       for (let i = 0; i < arrMuted.length; i++) {
         arrMuted[i].innerText = `${data.photos[i].id}`
+      }
+      const cards = document.querySelectorAll('.card')
+      const arrOfCards = Array.from(cards)
+      for (let i = 0; i < arrOfCards.length; i++) {
+        arrOfCards[i].classList.remove('d-none')
       }
     })
     .catch((error) => {
