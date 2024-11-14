@@ -75,3 +75,16 @@ for (let i = 0; i < editButton.length; i++) {
     cards[i].classList.add('d-none')
   })
 }
+
+fetch(PEXEL_URL, {
+  method: 'GET',
+  headers: {
+    Authorization: API_KEY,
+  },
+}).then((response) => {
+  if (response.ok) {
+    return response.json()
+  } else {
+    throw new Error('Errore nella richiesta!')
+  }
+})
