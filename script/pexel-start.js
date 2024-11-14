@@ -70,4 +70,8 @@ loadBtnSecond.addEventListener('click', function () {
 const editButton = document.querySelectorAll('.btn-group button:nth-of-type(2)')
 for (let i = 0; i < editButton.length; i++) {
   editButton[i].innerText = 'Hide'
+  editButton[i].addEventListener('click', function () {
+    const cards = document.querySelectorAll('.card')
+    cards[i].classList.add('d-none')
+  })
 }
