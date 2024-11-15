@@ -1,7 +1,5 @@
 const PEXEL_URL = 'https://api.pexels.com/v1/search?query=galaxy'
 
-const API_KEY = 'ayRAraaqUW3F0iycASQJRiZMaiKrsWL1Mzv1Xt4l31xsB0ipFkx1xFsp'
-
 // const addressBarContent = new URLSearchParams(window.location.search)
 
 // const myQuery = addressBarContent.get('query')
